@@ -23,6 +23,7 @@
 		<!-- Fonts/Icons -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		<link href="./assests/all.css" rel="stylesheet">
+		<link href="./assests/animations.css" rel="stylesheet">
 	<script type="text/javascript" charset="UTF-8" src="./assests/common.js"></script><script type="text/javascript" charset="UTF-8" src="./assests/util.js"></script><script type="text/javascript" charset="UTF-8" src="./assests/map.js"></script><script type="text/javascript" charset="UTF-8" src="./assests/marker.js"></script><script type="text/javascript" charset="UTF-8" src="./assests/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./assests/controls.js"></script></head>
 	<body data-preloader="true" class="loaded">
 		<!-- Cursor -->
@@ -82,6 +83,7 @@
 				<div class="container text-center">
 					<div class="row">
 						<div class="col-12">
+							<p class="da-sl">// init_portfolio()</p>
 							<h1 class="hero-heading display-1 fw-bold mb-0 stroke-text">Denni Alwin J</h1>
 						</div>
 					</div><!-- end row -->
@@ -90,7 +92,10 @@
 			<!-- end Hero section -->
 
 			<!-- About section -->
+			<div class="section da-about-section">
 			<div class="container">
+				<p class="da-sl">// about_me()</p>
+				<div class="da-about-card">
 				<div class="row g-4 g-md-5">
 					<div class="col-12 col-lg-4 order-lg-2 text-center">
 						<!-- Hero Avatar -->
@@ -124,32 +129,12 @@
 							</div>
 							<div class="col-6 col-md-4 col-lg-12">
 								<h6 class="sm-heading">Connect</h6>
-								<ul class="list-inline">
-									<li>
-										<a class="button-circle button-circle-sm" href="#">
-											<i class="bi bi-facebook"></i>
-											<i class="bi bi-facebook"></i>
-										</a>
-									</li>
-									<li>
-										<a class="button-circle button-circle-sm" href="https://x.com/Dennialwin">
-											<i class="bi bi-twitter-x"></i>
-											<i class="bi bi-twitter-x"></i>
-										</a>
-									</li>
-									<li>
-										<a class="button-circle button-circle-sm" href="https://www.instagram.com/alwin_d_j/">
-											<i class="bi bi-instagram"></i>
-											<i class="bi bi-instagram"></i>
-										</a>
-									</li>
-									<li>
-										<a class="button-circle button-circle-sm" href="https://github.com/Denni-Alwin">
-											<i class="bi bi-github"></i>
-											<i class="bi bi-github"></i>
-										</a>
-									</li>
-								</ul>
+								<div class="da-about-links">
+									<a href="#" class="da-ct-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+									<a href="https://x.com/Dennialwin" class="da-ct-link" title="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+									<a href="https://www.instagram.com/alwin_d_j/" class="da-ct-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+									<a href="https://github.com/Denni-Alwin" class="da-ct-link" title="GitHub"><i class="bi bi-github"></i></a>
+								</div>
 							</div>
 						</div><!-- end row(inner) -->
 					</div>
@@ -170,7 +155,9 @@
 						</div><!-- end row(inner) -->
 					</div>
 				</div><!-- end row -->
+				</div><!-- end da-about-card -->
 			</div><!-- end container -->
+			</div><!-- end da-about-section -->
 			<!-- end About section -->
 
 			<!-- Services section -->
@@ -178,6 +165,7 @@
 				<div class="container">
 					<div class="row g-4 g-xl-5">
 						<div class="col-12 col-xl-4">
+							<p class="da-sl">// what_i_do()</p>
 							<span class="title-heading text-white-04">Services</span>
 							<h1 class="display-3 fw-medium mb-0">What I <span class="text-gradient">Do</span></h1>
 						</div>
@@ -266,10 +254,11 @@
 
 			<!-- Portfolio section -->
 			<div id="portfolio" class="section-box">
-				<div class="section-sm bg-dark border-radius-1">
+				<div class="section-sm border-radius-1">
 					<div class="container">
 						<div class="row">
 							<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+								<p class="da-sl">// recent_works()</p>
 								<span class="title-heading text-white-04">Portfolio</span>
 								<h1 class="display-3 fw-medium">Recent <span class="text-gradient">Works</span></h1>
 								<p>From concept to reality, these projects highlight my dedication to turning ideas into tangible results. Whether it’s a web solution, an app, or an innovative home automation device, each creation showcases creativity, precision, and technical expertise—built to solve real-world problems and enhance everyday life.</p>
@@ -396,10 +385,11 @@
 			<!-- end Portfolio section -->
 
 			<!-- Awards section -->
-			<div id="awards" class="section pb-0">
+			<div id="awards" class="section pb-0 da-exp-section">
 				<div class="container">
 					<div class="row g-4 g-xl-5">
 						<div class="col-12 col-xl-4">
+							<p class="da-sl">// work_experience()</p>
 							<span class="title-heading text-white-04">Works</span>
 							<h1 class="display-3 fw-medium mb-0">Exper<span class="text-gradient">ience</span></h1>
 						</div>
@@ -409,7 +399,7 @@
 							   <div class="timeline timeline-one">
 								  <!-- Timeline Item 1 -->
 								  <div class="timeline-item">
-									 <img src="/assests/zoho-logo-darkbg.svg" style="width: 100px;"/>
+									 <img src="./assests/zoho-logo-darkbg.svg" style="width: 100px;"/>
 									 <h5 class="my-3">Zoho Corporation Pvt. Ltd.</h5>
 									 <h6 class="sm-heading text-white-04 mb-2">Member Technical Staff</h6>
 									 <h6 class="sm-heading text-white-04 mb-2">Feb 2022 - PRESENT</h6>
@@ -419,14 +409,14 @@
 								  </div>
 								  <!-- Timeline Item 2 -->
 								  <div class="timeline-item">
-									<img src="/assests/2-ex.png" style="width: 100px;"/>
+									<img src="./assests/2-ex.png" style="width: 100px;"/>
 									<h6 class="sm-heading text-white-04 mb-2">Intern</h6>
 									<h6 class="sm-heading text-white-04 mb-2">Jun 2020 - Aug 2020</h6>
 									<p>Developed a project to detect Heart Disease Using KNN algorithm </p>
 								  </div>
 								  <!-- Timeline Item 3 -->
 								  <div class="timeline-item">
-									<img src="/assests/Appl-Logo---400x200.png" style="width: 100px;"/>
+									<img src="./assests/Appl-Logo---400x200.png" style="width: 100px;"/>
 									<h6 class="sm-heading text-white-04 mb-2">Intern</h6>
 									<h6 class="sm-heading text-white-04 mb-2">Apr 2019 - May 2019</h6>
 									<p>In plant training on the automation process of plastic manufacture</p>
@@ -439,71 +429,112 @@
 				</div><!-- end container -->
 			</div>
 			<!-- end Awards section -->
-			<div id="awards" class="section pb-0">
+			<div id="awards" class="section pb-0 da-tech-section">
 				<div class="container">
-					<div class="row" style="left: 50px; position: relative; filter: brightness(80%);">
+					<p class="da-sl">// tech_stack()</p>
+					<div class="da-tech-shell">
+					<div class="row" style="left: 50px; position: relative;">
 							<div class="col-10 mx-auto">
-								<img src="/assests/logo/html.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/css.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/java.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/javascript.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/python.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/git.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/jquery.svg" style="width: 50px; margin: 30px;"/>
-								<img src="/assests/logo/sh.svg" style="width: 50px; margin: 30px;"/>
+								<img src="./assests/logo/html.svg" style="width: 50px; margin: 30px;" title="HTML5"/>
+								<img src="./assests/logo/css.svg" style="width: 50px; margin: 30px;" title="CSS3"/>
+								<img src="./assests/logo/java.svg" style="width: 50px; margin: 30px;" title="Java"/>
+								<img src="./assests/logo/javascript.svg" style="width: 50px; margin: 30px;" title="JavaScript"/>
+								<img src="./assests/logo/python.svg" style="width: 50px; margin: 30px;" title="Python"/>
+								<img src="./assests/logo/c.svg" style="width: 50px; margin: 30px;" title="C"/>
+								<img src="./assests/logo/git.svg" style="width: 50px; margin: 30px;" title="Git"/>
+								<img src="./assests/logo/jquery.svg" style="width: 50px; margin: 30px;" title="jQuery"/>
+								<img src="./assests/logo/sh.svg" style="width: 50px; margin: 30px;" title="Shell"/>
 							</div>
+					</div><!-- end row -->
+					</div><!-- end da-tech-shell -->
+				</div><!-- end container -->
+			</div><!-- end section -->
+			
+			<!-- Contact section — redesigned -->
+			<div id="contact" class="section da-ct-section">
+				<div class="container">
+
+					<p class="da-ct-eyebrow">// get_in_touch()</p>
+
+					<div class="da-ct-shell">
+
+						<!-- ── LEFT: Signal panel ──────────────────────── -->
+						<div class="da-ct-signal">
+							<div class="da-ct-signal-body">
+								<h1 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span></h1>
+								<p class="da-ct-pitch">Got a project, an idea, or just want to say hello? My inbox is always open.</p>
+
+								<div class="da-ct-nodes">
+									<a class="da-ct-node" href="mailto:dennialwinj@gmail.com">
+										<span class="da-ct-node-icon"><i class="bi bi-envelope-fill"></i></span>
+										<div class="da-ct-node-text">
+											<em>email</em>
+											<strong>dennialwinj@gmail.com</strong>
+										</div>
+										<span class="da-ct-node-ping"></span>
+									</a>
+									<a class="da-ct-node" href="tel:+918778055866">
+										<span class="da-ct-node-icon"><i class="bi bi-telephone-fill"></i></span>
+										<div class="da-ct-node-text">
+											<em>phone</em>
+											<strong>+91 87780 55866</strong>
+										</div>
+										<span class="da-ct-node-ping"></span>
+									</a>
+								</div>
+
+								<div class="da-ct-links">
+									<a href="#" class="da-ct-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+									<a href="https://x.com/Dennialwin" class="da-ct-link" title="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+									<a href="https://www.instagram.com/alwin_d_j/" class="da-ct-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+									<a href="https://github.com/Denni-Alwin" class="da-ct-link" title="GitHub"><i class="bi bi-github"></i></a>
+								</div>
+
+								<a class="da-ct-cv" href="./assests/Denni Alwin Resume.pdf" target="_blank">
+									<i class="bi bi-arrow-down-circle"></i>
+									<span>Download Resume</span>
+								</a>
+							</div>
+						</div>
+
+						<!-- ── RIGHT: Form panel ───────────────────────── -->
+						<div class="da-ct-form-panel">
+							<form method="post" id="contactform" novalidate>
+								<div class="da-ct-duo">
+									<div class="da-ct-f">
+										<input type="text" id="name" name="name" placeholder=" " required autocomplete="off">
+										<label for="name">Your Name</label>
+										<span class="da-ct-line"></span>
+									</div>
+									<div class="da-ct-f">
+										<input type="email" id="email" name="email" placeholder=" " required autocomplete="off">
+										<label for="email">Email Address</label>
+										<span class="da-ct-line"></span>
+									</div>
+								</div>
+								<div class="da-ct-f">
+									<input type="text" id="subject" name="subject" placeholder=" " required autocomplete="off">
+									<label for="subject">Subject</label>
+									<span class="da-ct-line"></span>
+								</div>
+								<div class="da-ct-f da-ct-f--area">
+									<textarea id="message" name="message" placeholder=" " rows="5"></textarea>
+									<label for="message">Your Message</label>
+									<span class="da-ct-line"></span>
+								</div>
+								<button class="da-ct-send" type="submit">
+									<span class="da-ct-send-label">Send Message</span>
+									<span class="da-ct-send-icon"><i class="bi bi-send-fill"></i></span>
+								</button>
+							</form>
+							<div class="submit-result">
+								<span id="success">Message sent — I'll get back to you shortly.</span>
+								<span id="error">Something went wrong. Please try again.</span>
+							</div>
+						</div>
+
 					</div>
 				</div>
-			</div>
-			
-			<!-- Contact section -->
-			<div id="contact" class="section pb-0">
-				<div class="container">
-					<div class="row g-4 g-xl-5">
-						<div class="col-12 col-xl-4">
-							<span class="title-heading text-white-04">Contact</span>
-							<h1 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span></h1>
-						</div>
-						<div class="col-12 col-xl-8" style="top: 80px;">
-							<div class="row g-4 g-lg-5">
-								<div class="col-12 col-md-6">
-									<h6 class="sm-heading">Email:</h6>
-									<h3 class="mb-0">dennialwinj@gmail.com</h3>
-								</div>
-								<div class="col-12 col-md-6">
-									<h6 class="sm-heading">Call:</h6>
-									<h3 class="mb-0">+91 87780 55866</h3>
-								</div>
-							</div><!-- end row(inner) -->
-							<!-- Contact Form -->
-							<div class="contact-form mt-4 mt-lg-5 text-xl-end">
-								<form method="post" id="contactform">
-									<div class="row gx-3 gy-0">
-										<div class="col-12 col-md-6">
-											<input type="text" id="name" name="name" placeholder="Name" required="">
-										</div>
-										<div class="col-12 col-md-6">
-											<input type="email" id="email" name="email" placeholder="E-Mail" required="">
-										</div>
-									</div>
-									<input type="text" id="subject" name="subject" placeholder="Subject" required="">
-									<textarea name="message" id="message" placeholder="Message"></textarea>
-									<a class="button button-white button-dot" href="./assests/Denni Alwin Resume.pdf" style="top: 18px; right: 10px;">
-										<span data-text="Hire Me – Resume">Hire Me – Resume</span>
-									</a>
-									<button class="button button-dot mt-4" type="submit">
-										<span data-text="Send Message">Send Message</span>
-									</button>
-								</form>
-								<!-- Submit result -->
-								<div class="submit-result">
-									<span id="success">Thank you! Your Message has been sent.</span>
-									<span id="error">Something went wrong, Please try again!</span>
-								</div>
-							</div><!-- end contact-form -->
-						</div>
-					</div><!-- end row -->
-				</div><!-- end container -->
 			</div>
 			<!-- end Contact section -->
 
@@ -528,6 +559,7 @@
 		<script src="./assests/js"></script>
 		<script src="./assests/jquery.min.js"></script>
 		<script src="./assests/plugins.js"></script>
-		<script src="./assests/functions.min.js"></script><div class="preloader"><div><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>
+		<script src="./assests/functions.min.js"></script>
+		<script src="./assests/animations.js"></script><div class="preloader"><div><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>
 	
 </body></html>
